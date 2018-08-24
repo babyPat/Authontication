@@ -1,0 +1,35 @@
+<!--
+  Generated template for the LogInPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>LogIn</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="pav">
+
+    <form [formGroup]="todo" (ngSubmit)="logForm()">
+    <ion-item class="pev">
+        <ion-label>Email</ion-label>
+        <ion-input type= "text" formControlName= "email">email</ion-input>
+      </ion-item>
+
+      <ion-item class="pev">
+          <ion-label>Password</ion-label>
+          <ion-input type= "number" formControlName= "password"> password</ion-input>
+      </ion-item>
+
+    </form>
+       
+      <br> <br>
+     <button ion-button (click)="LogIn()" id="piv">LogIn</button>
+    
+
+</ion-content>

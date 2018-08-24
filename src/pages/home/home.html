@@ -1,14 +1,62 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header >
+
+  <ion-navbar color="primary">
+    <ion-title>Register</ion-title>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+<ion-content padding class="dav">
+
+    <form [formGroup]="todo" (ngSubmit)="logForm()" >
+         <ion-item  class="dev">
+            <ion-label>UserName</ion-label>
+            <ion-input type= "text" formControlName= "username">userName</ion-input>
+          </ion-item>
+
+          
+         <ion-item class="dev">
+            <ion-label>DateOfBirth</ion-label>
+            <ion-input type= "number" formControlName= "dof">DOF</ion-input>
+          </ion-item>
+
+          
+         <ion-item class="dev">
+            <ion-label>Gender</ion-label>
+            <ion-input type= "text" formControlName= "gender">gender</ion-input>
+          </ion-item>
+    
+ 
+
+        <ion-item class="dev">
+            <ion-label>Email</ion-label>
+            <ion-input type= "text" formControlName= "email">email</ion-input>
+          </ion-item>
+
+          <ion-item class="dev">
+              <ion-label>Password</ion-label>
+              <ion-input type= "number" formControlName= "password"> password</ion-input>
+          </ion-item>
+
+    </form> 
+           
+          <br> <br>
+         
+          <div>
+         <button ion-button (click)="SignUp()" id="dov">SignUp </button>
+         <button ion-button (click)="SignIn()" id="duv">SignIn </button>
+         <button ion-button (click)="logInWithGoogle()" id="dii">Google</button> <br> <br>
+
+         <button clear full (click)="ForgotPassword()" id="jav">Forgot Password</button>
+
+
+        </div>
+
 </ion-content>
